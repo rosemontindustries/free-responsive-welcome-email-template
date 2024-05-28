@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to [Your Service]</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4; /* Background color */
+            color: #333333; /* Default text color */
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff; /* Container background color */
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .header {
+            position: relative;
+            color: white;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .logo {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+        .preview-text {
+            display: none;
+            font-size: 1px;
+            color: #f4f4f4;
+            max-height: 0;
+            max-width: 0;
+            opacity: 0;
+            overflow: hidden;
+        }
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .content h1 {
+            color: #333333; /* Text color */
+        }
+        .content p {
+            color: #666666; /* Secondary text color */
+        }
+        .content ol {
+            padding-left: 20px;
+            color: #333333; /* Text color */
+        }
+        .content ol li {
+            margin-bottom: 10px;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #007BFF; /* Button background color */
+            color: #ffffff; /* Button text color */
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #aaaaaa; /* Footer text color */
+            font-size: 12px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .header, .content, .footer {
+                padding: 10px;
+            }
+            .button {
+                width: 100%;
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #121212; /* Dark mode background */
+                color: #ffffff; /* Dark mode text color */
+            }
+            .container {
+                background-color: #1e1e1e; /* Dark mode container background */
+            }
+            .content p, .content ol, .content h1 {
+                color: #ffffff; /* Dark mode text color */
+            }
+            .footer {
+                color: #cccccc; /* Dark mode footer text color */
+            }
+            .button {
+                background-color: #1a73e8; /* Dark mode button color */
+                color: #ffffff; /* Dark mode button text color */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preview text for email clients that support it -->
+    <div class="preview-text">Welcome to [Your Service]! We’re thrilled to have you on board.</div>
+    
+    <table class="container" cellpadding="0" cellspacing="0" border="0" role="presentation">
+        <tr>
+            <td class="header">
+                <!-- Replace 'background.png' with the path to your background image -->
+                <img src="background.png" alt="Welcome Image">
+                <table class="logo" cellpadding="0" cellspacing="0" border="0" role="presentation">
+                    <tr>
+                        <td>
+                            <!-- Replace 'sample-logo.png' with the path to your logo image -->
+                            <img src="sample-logo.png" alt="Your Service Logo" style="width: 150px;">
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+                <h1>Welcome, [User's First Name]!</h1>
+                <p>We’re thrilled to have you on board. Whether you're here to [main use case of your tool/service], we’re committed to helping you achieve your goals.</p>
+                <h2>Here’s a quick guide to get you started:</h2>
+                <ol>
+                    <li><strong>Complete Your Profile:</strong> Fill out your profile to personalize your experience.</li>
+                    <li><strong>Explore Our Features:</strong> Check out our feature list.</li>
+                    <li><strong>Join Our Community:</strong> Connect with others in our community forum.</li>
+                    <li><strong>Check Out Our Resources:</strong> Visit our tutorials, blog, and webinars.</li>
+                </ol>
+                <a href="#" class="button">Get Started</a>
+                <p>Need help? Visit our <a href="#">Help Center</a> or contact us at [Support Email].</p>
+                <p>As a thank you for joining, here’s a special offer just for you: <strong>[Discount/Coupon Code]</strong>. Use it on your next purchase/upgrade.</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <p>Stay tuned for more updates and tips from us. We’re excited to see what you’ll accomplish with [Your Service].</p>
+                <p>Follow us on Social Media | <a href="#">Unsubscribe</a></p>
+                <p>&copy; [Year] [Your Company]. All rights reserved.</p>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
